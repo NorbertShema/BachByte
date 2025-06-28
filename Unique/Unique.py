@@ -15,7 +15,7 @@ Output: False
 
 Example 3
 Example Input: s = ""
-Expected Output: True
+Expected Output: True.
 
 '''
 def has_all_unique_charachers(s):
