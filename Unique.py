@@ -18,10 +18,8 @@ Example Input: s = ""
 Expected Output: True
 
 '''
-
-
 def has_all_unique_charachers(s):
-    seen = set()
+    seen = set() ## sets allow no duplicate
     for char in s:
         if char in seen:
             return False
@@ -31,5 +29,4 @@ def has_all_unique_charachers(s):
     return True
 
 s = "abcfef"
-
 print(has_all_unique_charachers(s))
