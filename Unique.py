@@ -1,21 +1,22 @@
 '''
 Question description
-Candidate Report Page 3 of 17
-Norbert Shema
-Given a string s, return True if every character in the string is unique. Return False if any characters in
-s are repeated.
+
+Given a string s, return True if every character in the string is unique.
+Return False if any characters in s are repeated.
+
 Example 1
-Input: s =
-"abcdef"
+Input: s = "abcdef"
 Expected Output: True
+
 Example 2
-Input: s =
+Input: s = "aabbcc"
 Output: False
-"aabbcc"
+
+
 Example 3
-Example Input: s =
-""
+Example Input: s = ""
 Expected Output: True
+
 '''
 
 
