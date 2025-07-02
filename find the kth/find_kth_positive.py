@@ -22,7 +22,6 @@ def find_kth_positive(arr, k):
 
 arr = [2, 3, 4, 7, 11]
 k = 5
-print(find_kth_positive(arr, k))  
-# Expected output: 9
+print(find_kth_positive(arr, k))  # Expected output: 9
 
 
