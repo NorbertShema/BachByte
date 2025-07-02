@@ -34,7 +34,6 @@ Needle is longer than haystack, so we return -1.
 
 def find_needle(haystack, needle):
 
-
 # Edge case: empty needle always matches at index 0
     if needle == "":
        return 0
