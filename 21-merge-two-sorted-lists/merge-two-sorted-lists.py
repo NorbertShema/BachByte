@@ -40,4 +40,5 @@ class Solution(object):
 
         return dummy.next
         
-        
+    ##Time O(n)    
+    ##Space O(1)
