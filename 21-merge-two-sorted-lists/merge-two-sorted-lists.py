@@ -38,7 +38,7 @@ class Solution(object):
     # Attach the remaining part
         current.next = list1 if list1 else list2
 
-        return dummy.next
+        return dummy.next   ##this is the head of the merged list.
         
     ##Time O(n)    
     ##Space O(1)
