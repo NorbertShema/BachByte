@@ -31,7 +31,7 @@ class Solution(object):
 
 
         ##Time O(n)   
-        ##Space O(1)
+        ##Space O(n) because we used a py function add to add n element to the set(), seen.
 
 
 
