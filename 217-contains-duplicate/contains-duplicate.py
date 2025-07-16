@@ -27,7 +27,11 @@ class Solution(object):
                 return True
             seen.add(num)
 
-        return False      
+        return False   
+
+
+        ##Time O(n)   
+        ##Space O(1)
 
 
 
