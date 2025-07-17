@@ -18,7 +18,7 @@ class Solution(object):
             -we need to check if char in s is also in t
             - We can import counter collections to make a dictionary for us and 
             check if the key value pairs are the same and found in both dict
-            -if both dict are the same , then its true. 
+            -if both dict key:value are the same , then its true. 
 
         Implement:
 
