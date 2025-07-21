@@ -20,11 +20,11 @@ class Solution(object):
         Plan:
 
             -Initialize two pointers left and right.
-            -While left < right
+            -While left < right (bcs we dont care if l=r )
             -Skip non-alphanumeric characters using .isalnum().
             -Compare lowercase of characters at left and right.
             -If not equal, return False.
-            -Move both pointers inward if characters match
+            -If equal move the pointers inwards.
             -If loop completes, return True.
 
         Implement:        
