@@ -10,19 +10,19 @@ class Solution(object):
         :type root: Optional[TreeNode]
         :rtype: int
 
-        Understand
+        Understand:
             Input: Binary tree
             Output: number of nodes(int)
             Constraints: time/space complexity
             Edge cases: not node( no tree) return 0 as the depth
 
-        Match:DFS (binary search trees)
+        Match:
+            -DFS (binary search trees)
 
         Plan:
             -Check to see if we have a root ( return 0 if no root (tree))
             -Otherwise: check the left and right side of the root to check for depth
             -return the max depth
-
 
         Implement:
         """
@@ -33,3 +33,6 @@ class Solution(object):
         right = self.maxDepth(root.right)
 
         return 1+ max(left, right)
+
+        ## time complexity O(n)
+        ## space complexity O(h)
