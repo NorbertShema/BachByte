@@ -21,11 +21,11 @@ class Solution(object):
                 -True if the trees are the same
                 -False otherwise
                 
-            Constraints:
+        Constraints:
                 -Node values are integers.
                 -Nodes can be null (i.e., leafless branches).
 
-            Edge Cases:
+        Edge Cases:
                 -Both trees are None → return True
                 -One tree is None, the other is not → return False
                 -Trees with same structure but different values → return False
