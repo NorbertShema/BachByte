@@ -13,7 +13,7 @@ class Solution(object):
         Plan:
             -Set the max_profit = 0 :for easy tracking
             -Set min_price = inf : Because we dont know the min_price and we replace it when we find something smaller till we get to the min.
-            -Now we need to compute max profite
+            -Now we need to compute max profit
 
         Implement:
 
