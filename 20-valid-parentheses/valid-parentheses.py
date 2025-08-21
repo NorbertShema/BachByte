@@ -1,18 +1,20 @@
 class Solution(object):
     def isValid(self, s):
         """
-        :type s: str
+        : type s: str
         :rtype: bool
 
         Understand:
-                -Input: string of parantheses (s)
+                -Input: string of parentheses (s)
                 -Output: bool (true/false)
                 -constraints:
                             -s consists of parentheses only '()[]{}'.
                             -time/space complexity
                 -edge cases: empty string
+                
+         Match: Stacks       
 
-        Plan: use stack for a valid parantheses checker
+        Plan: use a stack for a valid parentheses checker
 
         Implement:
 
@@ -27,7 +29,7 @@ class Solution(object):
             if char not in parentheses:
                 stack.append(char)
             else:
-                    # Edge case: if stack is empty, there's no opening bracket to match
+                    # Edge case: if the stack is empty, there's no opening bracket to match
                 if not stack:
                     return False
                         # Pop the last opening bracket and check if it matches the current closing one
@@ -35,7 +37,7 @@ class Solution(object):
                 if popped != parentheses[char]:
                     return False  # Mismatched pair
 
-        # If stack is empty, all brackets matched; otherwise, some were left unclosed
+        # If the stack is empty, all brackets are matched; otherwise, some were left unclosed
         return not stack
 
 
