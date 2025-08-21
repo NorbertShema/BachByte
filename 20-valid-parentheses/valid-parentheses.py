@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: bool
 
         Understand:
-                -Input: string (s)
+                -Input: string of parantheses (s)
                 -Output: bool (true/false)
                 -constraints:
                             -s consists of parentheses only '()[]{}'.
