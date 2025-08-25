@@ -10,13 +10,16 @@ class Solution(object):
             -Input: list (int) and a target (int)
             -Output: list of indices
             -Constraint: 
-                        -only one solution 
-                        - not using the same element twice
+                    -only one solution 
+                    - not using the same element twice
             -Edge cases: empty array  
 
 
          Plan:
                 -Use a hash map to store key:value pairs as (num:index)      
+                -since we are guaranteed a solution, we can search for (x = target - num)
+                -if found, then return the two indices, otherwise add it to the dictionary
+                - no return needed. 
 
 
         implement:
