@@ -4,35 +4,20 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
 class Solution(object):
     def maxDepth(self, root):
         """
         :type root: Optional[TreeNode]
         :rtype: int
-
-        Understand:
-            Input: Binary tree
-            Output: number of nodes(int)
-            Constraints: time/space complexity
-            Edge cases: not node( no tree) return 0 as the depth
-
-        Match:
-            -DFS (binary search trees)
-
-        Plan:
-            -Check to see if we have a root ( return 0 if no root (tree))
-            -Otherwise: check the left and right side of the root to check for depth
-            -return the max depth
-
-        Implement:
         """
-        if not root:
+        # Base case: if the tree is empty, depth is 0
+        if root is None:
             return 0
-
-        left = self.maxDepth(root.left)
-        right = self.maxDepth(root.right)
-
-        return 1+ max(left, right)
-
-        ## time complexity O(n)
-        ## space complexity O(h)
+        
+        # Recursively find the depth of the left and right subtrees
+        left_depth = self.maxDepth(root.left)
+        right_depth = self.maxDepth(root.right)
+        
+        # The depth of the tree is the max of the two, plus 1 for the current node
+        return 1 + max(left_depth, right_depth)
