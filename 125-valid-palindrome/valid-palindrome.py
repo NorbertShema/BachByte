@@ -2,24 +2,24 @@ class Solution(object):
     def isPalindrome(self, s):
         """
         Understand:
-        - Input: string s (a phrase)
-        - Output: Boolean (True if palindrome, False otherwise)
-        - Only alphanumeric characters matter
-        - Case-insensitive
-        - Edge case: empty string is considered a palindrome
-        - Time/Space constraints: O(n) time, O(1) space
+            - Input: string s (a phrase)
+            - Output: Boolean (True if palindrome, False otherwise)
+            - Only alphanumeric characters matter
+            - Case-insensitive
+            - Edge case: empty string is considered a palindrome
+            - Time/Space constraints: O(n) time, O(1) space
 
         Match:
-        - Two pointers (left and right) approach
+            - Two pointers (left and right) approach
 
         Plan:
-        1. Initialize left at 0, right at len(s) - 1
-        2. While left < right:
-            a. Skip non-alphanumeric characters on both sides
-            b. Compare lowercase of left and right characters
-            c. If mismatch, return False
-            d. Otherwise, move pointers inward
-        3. If loop completes, return True
+            1. Initialize left at 0, right at len(s) - 1
+            2. While left < right:
+                a. Skip non-alphanumeric characters on both sides
+                b. Compare lowercase of left and right characters
+                c. If mismatch, return False
+                d. Otherwise, move pointers inward
+            3. If loop completes, return True
 
         Implement:
         """
