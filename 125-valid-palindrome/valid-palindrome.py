@@ -1,59 +1,50 @@
 class Solution(object):
     def isPalindrome(self, s):
         """
-        :type s: str
-        :rtype: bool
+        Understand:
+        - Input: string s (a phrase)
+        - Output: Boolean (True if palindrome, False otherwise)
+        - Only alphanumeric characters matter
+        - Case-insensitive
+        - Edge case: empty string is considered a palindrome
+        - Time/Space constraints: O(n) time, O(1) space
 
-        Undertstand: given a phrase(s) check if its alphanum is a palindrome
-                -Input: string (s): a phrase
-                -Output: Bool(true/false)
-                -Constraints: 
-                        -s consists only of printable chars
-                        -must be converted to alphanum
-                        -time/space complexity
-                Edge cases:Empty string is a palindrome
-
-
-
-        Match: Two pointers
+        Match:
+        - Two pointers (left and right) approach
 
         Plan:
+        1. Initialize left at 0, right at len(s) - 1
+        2. While left < right:
+            a. Skip non-alphanumeric characters on both sides
+            b. Compare lowercase of left and right characters
+            c. If mismatch, return False
+            d. Otherwise, move pointers inward
+        3. If loop completes, return True
 
-            -Initialize two pointers left and right.
-            -While left < right (bcs we dont care if l=r )
-            -Skip non-alphanumeric characters using .isalnum().
-            -Compare lowercase of characters at left and right.
-            -If not equal, return False.
-            -If equal move the pointers inwards.
-            -If loop completes, return True.
-
-        Implement:        
+        Implement:
         """
-        l, r = 0, len(s) -1
+        left, right = 0, len(s) - 1
 
-        while l < r:
-            if not s[l].isalnum():
-                l +=1
+        while left < right:
+            # Skip non-alphanumeric characters from the left
+            if not s[left].isalnum():
+                left += 1
                 continue
 
-            if not s[r].isalnum():
-                r -=1 
+            # Skip non-alphanumeric characters from the right
+            if not s[right].isalnum():
+                right -= 1
                 continue
 
-            if s[l].lower() != s[r].lower():
-                return False
-            l += 1
-            r -= 1
+            # Compare characters in lowercase
+            if s[left].lower() != s[right].lower():
+                return False  # Mismatch found
 
-        return True
+            # Move pointers inward
+            left += 1
+            right -= 1
 
-        ##Time O(n)
-        ## Space O(1)
+        return True  # All characters matched, it's a palindrome
 
-
-
-
-
-
-
-
+        # Time Complexity: O(n)
+        # Space Complexity: O(1)
