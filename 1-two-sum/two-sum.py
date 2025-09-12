@@ -6,37 +6,48 @@ class Solution(object):
         :rtype: List[int]
 
         Understand:
+            - Input: list of integers (nums) and a target integer (target)
+            - Output: list containing the indices of the two numbers that add up to target
+            - Constraints: 
+                - Exactly one valid solution exists
+                - Cannot use the same element twice
+            - Edge cases: empty array (though not applicable here since a solution is guaranteed)
 
-            -Input: list (int) and a target (int)
-            -Output: list of indices
-            -Constraint: 
-                    -only one solution 
-                    - not using the same element twice
-            -Edge cases: empty array  
+        Match:
+            - Use a hash map (dictionary) to store numbers and their indices
+            - This allows O(1) average lookup to check for complements
 
+        Plan:
+            - Initialize an empty hash map (lookup)
+            - Iterate through nums with index and value
+            - For each number, compute complement = target - num
+            - If complement exists in lookup, return [lookup[complement], i]
+            - Otherwise, store num with its index in lookup
 
-         Plan:
-                -Use a hash map to store key:value pairs as (num:index)      
-                -since we are guaranteed a solution, we can search for (x = target - num)
-                -if found, then return the two indices, otherwise add it to the dictionary
-                - no return needed. 
+        Implement:
+            - Code the loop and dictionary logic
+            - Return the solution when found
 
-
-        implement:
-                       
+        Complexity:
+            - Time Complexity: O(n)
+                We loop through nums once (O(n)), and each dictionary operation
+                (lookup and insertion) is O(1) average → total O(n).
+            - Space Complexity: O(n)
+                In the worst case, we store all n elements in the dictionary.
         """
 
         lookup = {}
 
-        for i, num in enumerate(nums):       # Iterate through the list with index and value
-            x = target - num                 # two numbers that adds up to the target ( we know num and we know the target)
+        for i, num in enumerate(nums):       # Iterate with index and value
+            x = target - num                 # Complement needed to reach target
 
-            if x in lookup:                   # Check if the complement is already in the dictionary
-                return [lookup[x], i]         # If found, return the indices of the two numbers
-                
-            lookup[num] = i                   # Otherwise, store the current number with its index in the dictionary
+            if x in lookup:                  # If complement is already in dictionary
+                return [lookup[x], i]        # Return indices of both numbers
+
+            lookup[num] = i                  # Store current number with its index
 
 
 
-# Time Complexity: O(n)
+
+# Time Complexity: O(n) 
 # Space Complexity: O(n)
