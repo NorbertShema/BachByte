@@ -16,7 +16,7 @@ class Solution(object):
 
         Plan:
             - Initialize max_profit = 0 (no profit yet)
-            - Initialize min_price = ∞ (start high, will update with smaller values)
+            - Initialize min_price = ∞ (start high, will update when a smaller values is seen)
             - For each price in the list:
                 - Update min_price if we find a smaller price
                 - Calculate profit = current price - min_price
