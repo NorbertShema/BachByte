@@ -38,5 +38,5 @@ class Solution(object):
         return root
 
 ##Time: O(n)
-##Time :O(h) (height of the tree)
+##Time :O(h) (height of the tree) or just 0(n)
         
