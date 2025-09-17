@@ -25,8 +25,7 @@ class Solution(object):
             - Otherwise, store num with its index in lookup
 
         Implement:
-            - Code the loop and dictionary logic
-            - Return the solution when found
+    
 
         Complexity:
             - Time Complexity: O(n)
