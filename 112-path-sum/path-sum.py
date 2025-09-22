@@ -31,7 +31,7 @@ class Solution(object):
             if not node:
                 return False
 
-            if not node.left and not node.right:  # leaf node
+            if not node.left and not node.right:  # the leaf node
                 return node.val == remaining
 
             remaining -= node.val
