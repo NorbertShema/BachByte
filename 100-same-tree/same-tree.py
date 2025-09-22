@@ -22,8 +22,8 @@ class Solution(object):
                 -False otherwise
                 
         Constraints:
-                -Node values are integers.
-                -Nodes can be null (i.e., leafless branches).
+                -All Node values are integers
+                -Nodes can be null (i.e., leafless branches)
 
         Edge Cases:
                 -Both trees are None → return True
