@@ -22,3 +22,6 @@ class Solution(object):
 
         # When fast reaches the end, slow is at the middle
         return slow
+
+##  Time complexity O(n)
+## Space complexity O(1)
