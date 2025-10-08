@@ -11,11 +11,10 @@ class Solution(object):
         :rtype: ListNode
         """
 
-        # UPI Method
         # Understand:
-        # - We are given the head of a linked list.
-        # - The list may contain a cycle (a node’s next points back to a previous node).
-        # - We need to return the node where the cycle begins, or None if there is no cycle.
+            # - We are given the head of a linked list.
+            # - The list may contain a cycle (a node’s next points back to a previous node).
+            # - We need to return the node where the cycle begins, or None if there is no cycle.
         # - Constraints:
         #     - The linked list nodes have unique memory addresses (so identity comparison works).
         #     - Must do this with O(1) extra space.
