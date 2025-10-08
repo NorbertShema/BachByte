@@ -20,15 +20,15 @@ class Solution(object):
         #     - Must do this with O(1) extra space.
 
         # Plan:
-        # 1. Use Floyd’s Tortoise and Hare algorithm.
-        # 2. Use two pointers: slow and fast.
-        # 3. Move slow by one step, fast by two steps.
-        # 4. If they meet, there is a cycle.
-        # 5. Once a meeting point is found:
-        #       - Set one pointer to head.
-        #       - Move both pointers one step at a time.
-        #       - The point where they meet again is the start of the cycle.
-        # 6. If fast or fast.next becomes None, return None (no cycle).
+            # 1. Use Floyd’s Tortoise and Hare algorithm.
+            # 2. Use two pointers: slow and fast.
+            # 3. Move slow by one step, fast by two steps.
+            # 4. If they meet, there is a cycle.
+            # 5. Once a meeting point is found:
+            #       - Set one pointer to head.
+            #       - Move both pointers one step at a time.
+            #       - The point where they meet again is the start of the cycle.
+            # 6. If fast or fast.next becomes None, return None (no cycle).
 
         # Implement:
 
