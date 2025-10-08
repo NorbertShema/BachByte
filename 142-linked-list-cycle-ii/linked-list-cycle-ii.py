@@ -32,7 +32,7 @@ class Solution(object):
 
         # Implement:
 
-        if not head:
+        if not head and head.next:
             return None  # empty list, no cycle
 
         slow = head
