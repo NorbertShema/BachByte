@@ -14,7 +14,7 @@ class Solution(object):
 
         Understand:
             Input: root of a binary tree, and an integer targetSum
-            Output: True if any root-to-leaf path adds up to targetSum
+            Output: True if any root-to-leaf path adds up to targetSum.
 
         Match: Tree, DFS
 
