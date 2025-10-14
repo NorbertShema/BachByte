@@ -22,7 +22,7 @@ class Solution(object):
             - If the node is None, return False
             - If it's a leaf and value equals targetSum → return True
             - Recursively check left and right subtrees with updated targetSum
-            - Return True if either path returns True
+            - Return True if either path returns True.
 
         Implement:
         """
