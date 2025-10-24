@@ -13,8 +13,7 @@ class Solution(object):
                 - Exactly one valid solution exists
                 - Cannot use the same element twice
                 
-        Edge cases: empty array (though not applicable here since a solution is guaranteed)
-
+        Edge cases: empty array (this won't be applicable here since it is stated that a solution is guaranteed)
         Match:
             - Use a hash map (dictionary) to store numbers and their indices
             - This allows O(1) average lookup to check for complements
