@@ -32,7 +32,7 @@ class Solution(object):
                 We loop through nums once (O(n)), and each dictionary operation
                 (lookup and insertion) is O(1) average → total O(n).
             - Space Complexity: O(n)
-                In the worst case, we store all n elements in the dictionary.
+                In the worst case, we store all n elements in the dict.
         """
 
         lookup = {}
