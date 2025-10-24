@@ -12,7 +12,8 @@ class Solution(object):
          Constraints: 
                 - Exactly one valid solution exists
                 - Cannot use the same element twice
-            - Edge cases: empty array (though not applicable here since a solution is guaranteed)
+                
+        Edge cases: empty array (though not applicable here since a solution is guaranteed)
 
         Match:
             - Use a hash map (dictionary) to store numbers and their indices
