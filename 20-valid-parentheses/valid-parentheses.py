@@ -7,7 +7,8 @@ class Solution(object):
         Understand:
             - Input: string of parentheses (s)
             - Output: bool (True/False)
-            - Constraints:
+            
+        Constraints:
                 - s consists of parentheses only: '()[]{}'
                 - Time/Space complexity should be optimal
             - Edge cases:
