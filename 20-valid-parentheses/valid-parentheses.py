@@ -11,7 +11,8 @@ class Solution(object):
         Constraints:
                 - s consists of parentheses only: '()[]{}'
                 - Time/Space complexity should be optimal
-            - Edge cases:
+                
+        Edge cases:
                 - Empty string → return True (nothing invalid)
         
         Match:
