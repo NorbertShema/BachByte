@@ -8,7 +8,8 @@ class Solution(object):
         Understand:
             - Input: list of int (nums) and a target int (target)
             - Output: list containing the indices of the two numbers that add up to target
-            - Constraints: 
+            
+         Constraints: 
                 - Exactly one valid solution exists
                 - Cannot use the same element twice
             - Edge cases: empty array (though not applicable here since a solution is guaranteed)
