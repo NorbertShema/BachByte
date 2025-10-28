@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: List[int]
 
         Understand:
-            - Input: list of int (nums) and a target int (target)
+            - Input: Array of int (nums) and a target int (target)
             - Output: list containing the indices of the two numbers that add up to target
             
          Constraints: 
