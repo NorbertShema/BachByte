@@ -44,7 +44,7 @@ class Solution(object):
             if x in lookup:                  # If complement is already in dictionary
                 return [lookup[x], i]        # Return indices of both numbers
 
-            lookup[num] = i                  # Store current number with its index
+            lookup[num] = i                  # Store current number with its index in the dict(lookup)
 
 
 
