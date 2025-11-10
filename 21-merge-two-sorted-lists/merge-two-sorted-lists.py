@@ -19,7 +19,7 @@ class Solution(object):
                 - Lists are sorted in non-decreasing order
             - Edge cases:
                 - Either list could be empty
-                - Both lists empty → return None
+                - If Both lists empty → just return None
 
         Plan:
             - Use a dummy node to simplify the merge process
