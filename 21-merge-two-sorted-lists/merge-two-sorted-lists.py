@@ -22,13 +22,13 @@ class Solution(object):
                 - If Both lists empty → just return None
 
         Plan:
-            - Use a dummy node to simplify the merge process
+            - Use a dummy node to simplify the merge process ( a dummy node is like a fake node, so the actual heand node is going to be at dummy.next
             - Maintain a pointer (current) to build the merged list
             - Compare nodes from both lists:
                 - Attach the smaller one to current
                 - Move forward in that list
             - Attach any remaining nodes once one list is exhausted
-            - Return dummy.next as the head of the merged list
+            - Return dummy.next as the head of the merged list.
         """
 
         dummy = ListNode()   # dummy node to simplify edge cases
