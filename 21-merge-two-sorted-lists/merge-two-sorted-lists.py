@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: Optional[ListNode]
 
         Understand:
-            - Input: Two sorted linked lists (list1, list2)
+            - Input: We are given Two sorted linked lists (list1, list2)
             - Output: One merged sorted linked list
             - Constraints: 
                 - The number of nodes in both lists is in range [0, 50]
