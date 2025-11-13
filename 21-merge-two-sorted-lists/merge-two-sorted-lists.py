@@ -22,7 +22,7 @@ class Solution(object):
                 - If Both lists empty → just return None
 
         Plan:
-            - Use a dummy node to simplify the merge process ( a dummy node is like a fake node, so the actual heand node is going to be at dummy.next
+            - Use a dummy node to simplify the merge process ( a dummy node is like a fake node, so the actual head node is going to be at dummy.next
             - Maintain a pointer (current) to build the merged list
             - Compare nodes from both lists:
                 - Attach the smaller one to current
