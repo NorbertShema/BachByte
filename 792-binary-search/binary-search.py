@@ -6,51 +6,50 @@ class Solution(object):
         :rtype: int
 
         Understand:
-            Input: - List [nums]: an array on integers sorted in asc order
-                   - int[target]: an integer target 
-
-            Output: int[index]: the index of the target in the array[nums]
-
-            Constraints:
-                    -time complexity: o(log n)
-                    -All the integers in nums are unique.
-                    -nums is sorted in ascending order.
-
+            Input: array (nums) and int(target)
+            Output: index of the target: nums[target]
+            Constraints: 
+                -Time complexity of o(log n)
+                -nums is sorted so we perform binary search
+                - all integers in nums are unique.
+                
             Edge cases:
-                -Empty array
+                -Empty array(nums): Here I would return -1
+                -no target found: return -1
 
-        Match:
-            -Binary search 0(log n )
+        Plan: The goal is to search in the nums, and return the index of the target if found, otherwise return -1
 
-        Plan:
             -initilize the points to the first and last index in the array
-        -while left <= right:
-            -find the mid = (left+right)//2
-            - if nums[mid] == target:
-                - return mid
+            -while left <= right:
+                -find the mid = (left+right)//2
+                - if nums[mid] == target:
+                    - return mid
 
-            -if nums[mid] < target:
-                -left = mid +1
-            -else:
-                - right = mid -1 
+                -if nums[mid] < target:
+                    -left = mid +1
+                -else:
+                    - right = mid -1 
 
-        return -1 
+            return -1 
 
 
-        Implement:
         """
+        
         left = 0
-        right =len(nums)-1
+        right = len(nums)-1
 
-        while left <= right:
-            mid = (left + right )//2
-            
+        while left <= right: 
+            mid = (left + right)//2
+
             if nums[mid] == target:
                 return mid
 
-            if nums[mid] > target:
-                right = mid -1
-            else:
-                left = mid +1
+            if nums[mid] < target:
+                left = mid+1
 
-        return -1
+            else:
+                right = mid -1
+
+        return -1         
+
+
