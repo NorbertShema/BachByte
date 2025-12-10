@@ -21,6 +21,10 @@ class Solution(object):
             - recursion part
                 - F(n>1)
 
+           -We can also use Dynamic programming 
+            -   Top down memerazation
+            _Bottom up tablation      
+
         Implement:  
 
         """
