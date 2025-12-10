@@ -54,9 +54,3 @@ class Solution(object):
                 left = mid +1
 
         return -1
-
-nums = [-1,0,3,5,9,12]
-target = 9 
-
-index = Solution()
-print(index.search(nums, target))
