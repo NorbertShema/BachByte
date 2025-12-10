@@ -23,7 +23,7 @@ class Solution(object):
             -Binary search 0(log n )
 
         Plan:
-            -intilize the points to the first and last index in the array
+            -initilize the points to the first and last index in the array
         -while left <= right:
             -find the mid = (left+right)//2
             - if nums[mid] == target:
