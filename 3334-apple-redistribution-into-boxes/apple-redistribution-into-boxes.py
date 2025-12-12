@@ -5,11 +5,10 @@ class Solution(object):
         :type capacity: List[int]
         :rtype: int
         """
-        total_apples = sum(apple)
 
+        total_apples = sum(apple)
         # Sort capacities from largest to smallest
         capacity.sort(reverse=True)
-
         used_boxes = 0
 
         for box in capacity:
