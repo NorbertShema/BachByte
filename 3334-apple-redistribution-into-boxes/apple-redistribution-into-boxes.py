@@ -18,4 +18,4 @@ class Solution(object):
             if total_apples <= 0:
                 return used_boxes
 
-        return used
+        return used_boxes
