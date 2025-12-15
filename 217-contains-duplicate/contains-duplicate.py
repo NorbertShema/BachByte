@@ -12,8 +12,8 @@ class Solution(object):
 
         plan:
             -Use set to avoid duplicates  
-            -Make an iteration to check if the num is in the set, 
-            if not add it. other keep moving until we reach the end of the list
+            -Make an iteration to check if the num is in the set, then return true if found
+            -if not add it and return false. 
             -if the list is empty , then return true since we have no dups
 
 
@@ -21,13 +21,14 @@ class Solution(object):
           
 
         """
-        seen = set ()
+        seen = set()
+
         for num in nums:
             if num in seen:
-                return True
+                return True # duplicate found
+                
             seen.add(num)
-
-        return False   
+        return False    
 
 
         ##Time O(n)   
