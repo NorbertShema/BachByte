@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
 
 
-        Understand: Create a F numbers such that each number is the sum of two previous numbers.
+        Understand: Create an F number such that each number is the sum of two previous numbers.
             Input: int (n)
 
             Output: the sum at int (n)
