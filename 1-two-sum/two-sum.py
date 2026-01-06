@@ -7,7 +7,7 @@ class Solution(object):
 
         Understand:
             - Input: Array of int (nums) and a target int (target)
-            - Output: list containing the indices of the two numbers that add up to target
+            - Output: list containing the indices of the two numbers that add up to a target
             
          Constraints: 
                 - Exactly one valid solution exists
