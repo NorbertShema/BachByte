@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
 
 
-        Understand: Create a F numbers such that each number is the sum of two prev number.
+        Understand: Create a F numbers such that each number is the sum of two previous numbers.
             Input: int (n)
 
             Output: the sum at int (n)
@@ -22,8 +22,8 @@ class Solution(object):
                 - F(n>1)
 
            -We can also use Dynamic programming 
-            -   Top down memerazation
-            _Bottom up tablation   
+            -   Top-down memorization
+            _Bottom-up tabulation   
             -Botton up no tabluation( this is the most optimal way)
 
         Implement:  
