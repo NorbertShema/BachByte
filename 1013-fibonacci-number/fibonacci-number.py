@@ -23,7 +23,8 @@ class Solution(object):
 
            -We can also use Dynamic programming 
             -   Top down memerazation
-            _Bottom up tablation      
+            _Bottom up tablation   
+            -Botton up no tabluation( this is the most optimal way)
 
         Implement:  
 
