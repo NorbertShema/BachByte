@@ -19,7 +19,7 @@ class Solution(object):
 
             Output:
                 -True if the trees are the same
-                -False otherwise
+                -otherwise, False
                 
         Constraints:
                 -All Node values are integers
