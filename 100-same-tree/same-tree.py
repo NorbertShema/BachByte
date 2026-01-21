@@ -14,7 +14,7 @@ class Solution(object):
 
         Understand
             Input:
-                -p: root node of the 
+                -p: root node of the first binary 
                 -q: root node of the second binary tree
 
             Output:
