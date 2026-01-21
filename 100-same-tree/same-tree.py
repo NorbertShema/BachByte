@@ -28,7 +28,7 @@ class Solution(object):
         Edge Cases:
                 -Both trees are None → return True
                 -One tree is None, the other is not → return False
-                -Trees with same structure but different values → return False
+                -Trees with same structure but different values → return False.
 
         Match: Tree traversal
 
