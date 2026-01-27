@@ -5,16 +5,19 @@ class Solution(object):
         :type target: int
         :rtype: int
 
-        Understand:Here we will do a normal binary search, instead of returning -1 if not found, we will
-        check to see where would the target be compared to the mid.
-
+        Understand:
         
+        Here we will do a normal binary search, instead of returning -1 if not found, we will
+        check to see where would the target be compared to the mid:
+                                                                 if nums [mid]< target:
+                                                                    return mid +1
 
-        Plan:
+                                                                else: 
+                                                                    return mid                
+
+        Plan: Normal Binary search
 
         Implement:
-
-
         """
         left = 0
         right = len(nums)-1
