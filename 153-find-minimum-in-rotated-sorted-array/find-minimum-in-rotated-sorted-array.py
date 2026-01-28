@@ -14,7 +14,7 @@ class Solution(object):
                 left = mid +1
 
             else:
-                right = mid
+                right = mid ## here the mid could also be the min.
 
         return nums[left] ## here since left = right, we can return which ever              
 
