@@ -16,7 +16,7 @@ class Solution(object):
             else:
                 right = mid
 
-        return nums[left]               
+        return nums[left] ## here since left = right, we can return which ever              
 
 
 
