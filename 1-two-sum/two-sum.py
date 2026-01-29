@@ -11,13 +11,13 @@ class Solution(object):
                 constraints exactly one solution, and you may not use the same element twice.
         """
     
-        lookup = {}
+        seen = {}
 
         for i, num in enumerate(nums):
             x = target - num
             
-            if x in lookup:  # Check if complement exists
-                return [lookup[x], i]  # Return stored index and current index
+            if x in seen:  # Check if complement exists
+                return [seen[x], i]  # Return stored index and current index
             
-            lookup[num] = i  # Store number -> index mapping
+            seen[num] = i  # Store number -> index mapping
             
