@@ -25,11 +25,11 @@ class Solution(object):
 
         for num in nums:
             if num in seen:
-                return True # duplicate found
-                
-            seen.add(num)
-        return False    
+                return True
 
+            seen.add(num)
+
+        return False       
 
         ##Time O(n)   
         ##Space O(n) because we used a py function add to add n element to the set(), seen.
