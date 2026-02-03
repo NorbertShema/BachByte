@@ -9,6 +9,11 @@ class Solution(object):
                 input : int(nums) and int(target)
                 output: the indices of the two numbers
                 constraints exactly one solution, and you may not use the same element twice.
+
+            
+Time O(n)
+Space O(n)
+
         """
     
         seen = {}
@@ -16,8 +21,8 @@ class Solution(object):
         for i, num in enumerate(nums):
             x = target - num
             
-            if x in seen:  # Check if complement exists
-                return [seen[x], i]  # Return stored index and current index
-            
-            seen[num] = i  # Store number -> index mapping
+            if x in seen:
+                return [ seen[x], i]
+
+            seen [num] = i    
             
