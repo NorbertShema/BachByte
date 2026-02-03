@@ -9,21 +9,20 @@ class Solution(object):
         """
         :type head: ListNode
         :rtype: bool
-
-        plan:
-            -Here I will use fast and slow pointer to check for a cycle, if they point on the same node, which will happen eventually then we have a cycle.
-            - Think of pointer because they have a more efficent O(1) than sets that use O(n) time complexity
         """
-        dummy = ListNode() ## this creates a dummy node
-        dummy.next = head      ## this connects the dummy node to the head of the list
-        slow, fast = dummy,dummy ## this intializes the two pointers to equal the dummy node created
+        dummy = ListNode()
+
+        dummy.next = head
+        slow = fast = dummy
 
         while fast and fast.next:
-            fast = fast.next.next ## moves twice
-            slow = slow.next        ## moves just once
+            slow = slow.next
+            fast = fast.next.next
 
-            if slow is fast:
-                return True       ## we have a cycle because fast has catched up to slow so return true
+            if slow == fast:
+                return True
 
-        return False        
-        ## otherwise return false, no cycle
+        return False  
+
+        #time O(n)
+        #space O(1)
