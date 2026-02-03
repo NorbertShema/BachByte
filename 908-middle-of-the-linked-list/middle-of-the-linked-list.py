@@ -19,3 +19,5 @@ class Solution(object):
 
         return slow       
 
+#Time O(n)
+#Space O(1)
