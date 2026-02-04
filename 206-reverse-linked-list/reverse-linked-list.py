@@ -8,21 +8,14 @@ class Solution(object):
         """
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
-
-        Hint:
-            -The prev pointer is going to be the new head after the linked listed has been reversed.
-        
-            - follow the order( initialize pointer, flip them to reversed and keep moving till the end of the linked list)
-
-
         """
         curr = head
         prev = None
 
         while curr:
-            temp = curr.next  ## temp pointer 
-            curr.next = prev  ## switches the nodes and keeps moving till the end
-            prev = curr        ## switches the pointer
-            curr = temp         ## switches the pointer
+            temp = curr.next
+            curr.next = prev ## this where the flip is
+            prev = curr
+            curr = temp
 
         return prev    
