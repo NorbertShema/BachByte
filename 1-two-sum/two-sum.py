@@ -12,7 +12,7 @@ class Solution(object):
 
             
 Time O(n)
-Space O(n)
+Space O(n) because we are using a dict
 
         """
     
