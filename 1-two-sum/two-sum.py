@@ -7,7 +7,7 @@ class Solution(object):
 
         Understand:
                 input : int(nums) and int(target)
-                output: the indices of the two numbers
+                output: the indices of the two numbers that adds up to a target
                 constraints exactly one solution, and you may not use the same element twice.
 
             
