@@ -10,7 +10,7 @@ class Solution(object):
         r = len(s)-1
 
         while l<r:
-            if not s[l].isalnum(): ## we make sure its alpha num
+            if not s[l].isalnum(): ## we make sure its alphanum
                 l = l + 1
                 continue
 
@@ -24,7 +24,10 @@ class Solution(object):
             l = l + 1
             r = r - 1
 
-        return True         
+        return True  
+
+        ## time : O(n)
+        ## Space: O(1)       
 
 
         
