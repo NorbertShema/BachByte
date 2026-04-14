@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: bool
         """
 
-        ## initialize the
+        ## initialize the pointers
         l = 0
         r = len(s)-1
 
