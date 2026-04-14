@@ -9,7 +9,7 @@ class Solution(object):
         """
         :type preorder: List[int]
         :type inorder: List[int]
-        :rtype: Optional[TreeNode]
+        :rtype: Optional[TreeNode].
         """
 
         if not preorder and not inorder:
